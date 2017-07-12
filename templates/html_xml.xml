@@ -1,0 +1,7 @@
+<templateSet group="html/xml">
+  <template name="caret" value="&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>

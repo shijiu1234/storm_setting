@@ -1,0 +1,51 @@
+<templateSet group="ngdoc">
+  <template name="ngdoc-service" value="/**&#10; * @ngdoc service&#10; * @name $class$&#10; * @module components.contact&#10; *&#10; * @description &#10; *      $description$&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ngdoc-controller" value="/**&#10; * @ngdoc type&#10; * @module components.contact&#10; * @name $class$&#10; *&#10; * @description  &#10; *      $description$&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ngdoc-directive" value="/**&#10; * @ngdoc directive&#10; * @name $class$&#10; * @module components.contact&#10; *&#10; * @description&#10; *      $description$&#10; *&#10; * @usage&#10; *     $use$&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="use" expression="" defaultValue="&quot;使用案例&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ngdoc-method" value="/**&#10; * @ngdoc method&#10; * @name $class$#$methodName$&#10; * @param {$paramType$} $paramName$ $paramDescription$&#10; * @return {$valueType$} This method returns the Value.&#10; *&#10; * @description &#10;        $description$&#10; */&#10; " description="" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="paramType" expression="" defaultValue="&quot;参数类型&quot;" alwaysStopAt="true" />
+    <variable name="paramName" expression="" defaultValue="&quot;参数名称&quot;" alwaysStopAt="true" />
+    <variable name="paramDescription" expression="" defaultValue="&quot;参数描述&quot;" alwaysStopAt="true" />
+    <variable name="valueType" expression="" defaultValue="&quot;返回值类型&quot;" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ngdoc-module" value="/**&#10; * @ngdoc module&#10; * @name $class$&#10; * @requires ui.router&#10; *&#10; * @description&#10; *      $description$&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ngdoc-resource" value="/**&#10; * @ngdoc service&#10; * @name $class$&#10; * @module components.contact&#10; *&#10; * @description &#10; *      $description$&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,7 @@
+<templateSet group="PHP">
+  <template name="catch" value="            catch (Exception $e) {&#10;                return Response::make(&quot;file:&quot; . $e-&gt;getFile() . &quot;\r\nline:&quot; . $e-&gt;getLine() . &quot;\r\nmessage:&quot; . $e-&gt;getMessage(), 403);&#10;            }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
