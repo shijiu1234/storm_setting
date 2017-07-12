@@ -34,7 +34,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="q" value="return makePromise($$q, $data$);" description="" toReformat="false" toShortenFQNames="true">
+  <template name="q" value="makePromise($$q, $data$);" description="" toReformat="false" toShortenFQNames="true">
     <variable name="data" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -66,6 +66,12 @@
     </context>
   </template>
   <template name="school" value="if (SchoolService.isSchool())" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="afads" value="fdasfads$data$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="data" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -118,7 +124,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="datetime" value="&lt;div class=&quot;dropdown&quot;&gt;&#10;    &lt;a class=&quot;dropdown-toggle&quot; id=&quot;dropdown2&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; style=&quot;cursor:pointer&quot;&gt;&#10;        &lt;div class=&quot;input-group&quot;&gt;&#10;            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; value=&quot;{{$data$ | date:'YYYY-MM-DD HH:mm:ss'}}&quot; readonly&gt;&#10;            &lt;span class=&quot;input-group-addon&quot;&gt;&#10;                &lt;i class=&quot;glyphicon glyphicon-calendar&quot;&gt;&lt;/i&gt;&#10;            &lt;/span&gt;&#10;        &lt;/div&gt;&#10;    &lt;/a&gt;&#10;    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dLabel&quot;&gt;&#10;        &lt;datetimepicker style=&quot;width:400px&quot; ng-model=&quot;$data$&quot; datetimepicker-config=&quot;{ dropdownSelector: '#dropdown2', modelType: 'YYYY-MM-DD HH:mm:ss' }&quot;/&gt;&#10;    &lt;/ul&gt;&#10;&lt;/div&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+  <template name="datetime" value="&lt;div class=&quot;dropdown&quot;&gt;&#10;    &lt;a class=&quot;dropdown-toggle&quot; id=&quot;dropdown2&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; style=&quot;cursor:pointer&quot;&gt;&#10;        &lt;div class=&quot;input-group&quot;&gt;&#10;            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; ng-model=&quot;$data$ | date:'YYYY-MM-DD HH:mm:ss'&quot;&gt;&#10;            &lt;span class=&quot;input-group-addon&quot;&gt;&#10;                &lt;i class=&quot;glyphicon glyphicon-calendar&quot;&gt;&lt;/i&gt;&#10;            &lt;/span&gt;&#10;        &lt;/div&gt;&#10;    &lt;/a&gt;&#10;    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dLabel&quot;&gt;&#10;        &lt;datetimepicker style=&quot;width:400px&quot; ng-model=&quot;$data$&quot; datetimepicker-config=&quot;{ dropdownSelector: '#dropdown2', modelType: 'YYYY-MM-DD HH:mm:ss' }&quot;/&gt;&#10;    &lt;/ul&gt;&#10;&lt;/div&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="data" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -126,103 +132,6 @@
   </template>
   <template name="popover" value="&lt;button uib-popover-template=&quot;'$data$.html'&quot; popover-placement=&quot;bottom&quot; popover-trigger=&quot;focus&quot;&gt;&#10;    {{select.name}}&#10;    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&#10;&lt;/button&gt;&#10;&lt;script type=&quot;text/ng-template&quot; id=&quot;$data$.html&quot;&gt;&#10;    &lt;div ng-repeat=&quot;item in $data$&quot; ng-click=&quot;$parent.$parent.select=item&quot; title=&quot;{{item.name}}&quot;&gt;&#10;        {{item.name}}&#10;    &lt;/div&gt;&#10;&lt;/script&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="clearboth" value="&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="dropdown" value="&lt;button id=&quot;single-button&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&#10;        uib-dropdown-toggle ng-disabled=&quot;disabled&quot;&gt;&#10;    $Caption$&#10;    &lt;span class=&quot;caret&quot; style=&quot;color:#fff&quot;&gt;&lt;/span&gt;&#10;&lt;/button&gt;&#10;&lt;ul class=&quot;dropdown-menu&quot; uib-dropdown-menu role=&quot;menu&quot; aria-labelledby=&quot;single-button&quot;&gt;&#10;    &lt;div class=&quot;drop-down-box&quot;&gt;&#10;        &lt;li ng-repeat=&quot;item in $data$&quot;&gt;{{item.name}}&#10;        &lt;/li&gt;&#10;    &lt;/div&gt;&#10;&lt;/ul&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="Caption" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="swg-resource" value="/**&#10; * @SWG\Resource(&#10; *  basePath=&quot;/&quot;,&#10; *  description=&quot;$class$&quot;,&#10; *  resourcePath=&quot;/$path$&quot;,&#10; *  produces=&quot;['application/json']&quot;&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
-    <variable name="path" expression="" defaultValue="decapitalize(clipboard())" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="swg-index" value="/**&#10; * @SWG\Api(&#10; *    path=&quot;/$path$&quot;,&#10; *      @SWG\Operation(&#10; *        method=&quot;GET&quot;,&#10; *        summary=&quot;Display a listing of the resource.&quot;,&#10; *&#9;&#9;  @SWG\Parameter(&#10; *            name=&quot;&quot;,&#10; *            description=&quot;&quot;,&#10; *            paramType=&quot;query&quot;,&#10; *            required=false,&#10; *            allowMultiple=true,&#10; *            type=&quot;integer&quot;&#10; *        )&#10; *&#9;&#9;  ,@SWG\Parameter(&#10; *            name=&quot;&quot;,&#10; *            description=&quot;&quot;,&#10; *            paramType=&quot;query&quot;,&#10; *            required=false,&#10; *            allowMultiple=true,&#10; *            type=&quot;integer&quot;&#10; *        )&#10; *    )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="path" expression="" defaultValue="decapitalize(clipboard())" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="swg-show" value="/**&#10; * @SWG\Api(&#10; *   path=&quot;/$path$/{id}&quot;,&#10; *   @SWG\Operation(&#10; *      method=&quot;GET&quot;,&#10; *      summary=&quot;Display the specified resource.&quot;,&#10; *&#9;&#9;@SWG\Parameter(&#10; *          name=&quot;id&quot;,&#10; *          description=&quot;$class$ id&quot;,&#10; *          paramType=&quot;path&quot;,&#10; *          required=true,&#10; *          allowMultiple=false,&#10; *          type=&quot;integer&quot;&#10; *       )&#10; *   )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="path" expression="" defaultValue="decapitalize(clipboard())" alwaysStopAt="true" />
-    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="swg-store" value="/**&#10; * @SWG\Api(&#10; *    path=&quot;/$path$&quot;,&#10; *      @SWG\Operation(&#10; *        method=&quot;POST&quot;,&#10; *        summary=&quot;Store a newly created resource in storage.&quot;,&#10; *&#9;&#9;  @SWG\Parameter(&#10; *            name=&quot;body&quot;,&#10; *            description=&quot;&quot;,&#10; *            paramType=&quot;body&quot;,&#10; *            required=true,&#10; *            allowMultiple=true,&#10; *            type=&quot;$class$&quot;&#10; *        )&#10; *     )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="path" expression="" defaultValue="decapitalize(clipboard())" alwaysStopAt="true" />
-    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="swg-update" value="/**&#10; * @SWG\Api(&#10; *    path=&quot;/$path$/{id}&quot;,&#10; *      @SWG\Operation(&#10; *        method=&quot;PUT&quot;,&#10; *        summary=&quot;Update the specified resource in storage.&quot;,&#10; *&#9;&#9;  @SWG\Parameter(&#10; *            name=&quot;id&quot;,&#10; *            description=&quot;$class$ id&quot;,&#10; *            paramType=&quot;path&quot;,&#10; *            required=true,&#10; *            allowMultiple=false,&#10; *            type=&quot;integer&quot;&#10; *        ),&#10; *&#9;&#9;  @SWG\Parameter(&#10; *            name=&quot;body&quot;,&#10; *            description=&quot;$class$对象&quot;,&#10; *            paramType=&quot;body&quot;,&#10; *            required=true,&#10; *            allowMultiple=true,&#10; *            type=&quot;$class$&quot;&#10; *        )&#10; *    )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="path" expression="" defaultValue="decapitalize(clipboard())" alwaysStopAt="true" />
-    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="swg-destroy" value="/**&#10; * @SWG\Api(&#10; *    path=&quot;/$path$/{id}&quot;,&#10; *      @SWG\Operation(&#10; *        method=&quot;DELETE&quot;,&#10; *        summary=&quot;Remove the specified resource from storage.&quot;,&#10; *&#9;&#9;  @SWG\Parameter(&#10; *            name=&quot;id&quot;,&#10; *            description=&quot;$class$ id&quot;,&#10; *            paramType=&quot;path&quot;,&#10; *            required=true,&#10; *            allowMultiple=false,&#10; *            type=&quot;integer&quot;&#10; *        )&#10; *    )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="path" expression="" defaultValue="decapitalize(clipboard())" alwaysStopAt="true" />
-    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="swg-model" value="/**&#10; * @SWG\Model(&#10; * &#9;id=&quot;$class$&quot;,&#10; * &#9;@SWG\Property(name=&quot;id&quot;, type=&quot;integer&quot;, required=false, description=&quot;&quot;)&#10; * &#9;,@SWG\Property(name=&quot;&quot;, type=&quot;integer&quot;, required=true, description=&quot;&quot;)&#10; * &#9;,@SWG\Property(name=&quot;&quot;, type=&quot;string&quot;, required=true, description=&quot;&quot;)&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="class" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="getSwitch" value="if(getSwitch('$switchName$', $defaultValue$, $params)){&#10;    $END$&#10;}" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="switchName" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
-    <variable name="defaultValue" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="addField" value="        if(Schema::hasTable('$tableName$')) {&#10;            Schema::table('$tableName$', function ($table) {&#10;                if(!Schema::hasColumn('$tableName$', '$columnName$')&#10;                    $table-&gt;integer('$columnName$')-&gt;default(0);&#10;            });&#10;        }&#10;" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="tableName" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="columnName" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="dropColumn" value="if( Schema::hasTable('$tableName$'))&#10;{&#10;    Schema::table('$tableName$', function($table){&#10;        if(Schema::hasColumn('$tableName$', '$columnName$'))&#10;            $table-&gt;dropColumn('$columnName$');&#10;    });&#10;}&#10;" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="tableName" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="columnName" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="transformResponse" value="transformResponse:function(data){&#10;    var data = angular.fromJson(data);&#10;    $END$&#10;    return data;&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="gs" value="if(getSwitch('$switch$', $defaultValue$))" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="switch" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
-    <variable name="defaultValue" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="uibtabset" value="&lt;uib-tabset&gt;&#10;    &lt;uib-tab index=&quot;1&quot; heading=&quot;&quot; select=&quot;&quot;&gt;&lt;/uib-tab&gt;&#10;    &lt;uib-tab heading=&quot;&quot; select=&quot;&quot;&gt;&lt;/uib-tab&gt;&#10;&lt;/uib-tabset&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>

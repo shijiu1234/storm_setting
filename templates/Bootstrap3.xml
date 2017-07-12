@@ -1,16 +1,5 @@
 <templateSet group="Bootstrap3">
-  <template name="bs3-media-object" value="&lt;div class=&quot;media&quot;&gt;&#10;  &lt;a class=&quot;media-left&quot; href=&quot;#&quot;&gt;&#10;    &lt;img src=&quot;http://placehold.it/64x64&quot; style=&quot;width: 64px; height: 64px;&quot;&gt;&#10;  &lt;/a&gt;&#10;  &lt;div class=&quot;media-body&quot;&gt;&#10;    &lt;h4 class=&quot;media-heading&quot;&gt;$var1$&lt;/h4&gt;&#10;    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.&#10;  &lt;/div&gt;&#10;&lt;/div&gt;$END$&#10;" description="Media object (single entry)" toReformat="true" toShortenFQNames="false">
-    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="GSP" value="true" />
-      <option name="JSP" value="true" />
-    </context>
-  </template>
-  <template name="bs3-form" value="&lt;form action=&quot;$var1$&quot; method=&quot;$var2$&quot; role=&quot;form&quot;&gt;&#10;&#9;&lt;legend&gt;$var3$&lt;/legend&gt;&#10;&#10;&#9;&lt;div className=&quot;form-group&quot;&gt;&#10;&#9;&#9;&lt;label for=&quot;&quot;&gt;&lt;/label&gt;&#10;&#9;&#9;&lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;&quot; id=&quot;&quot; placeholder=&quot;Input...&quot;&gt;&#10;&#9;&lt;/div&gt;&#10;&#10;&#9;$END$&#10;&#10;&#9;&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;$var4$&lt;/button&gt;&#10;&lt;/form&gt;" description="Form" toReformat="true" toShortenFQNames="false">
-    <variable name="var1" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-    <variable name="var2" expression="&quot;post&quot;" defaultValue="" alwaysStopAt="true" />
-    <variable name="var3" expression="&quot;Form Title&quot;" defaultValue="" alwaysStopAt="true" />
-    <variable name="var4" expression="&quot;Submit&quot;" defaultValue="" alwaysStopAt="true" />
+  <template name="bs3-alert-link" value="&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;&#10;   &lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself, you're &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;not looking too good&lt;/a&gt;.&#10;&lt;/div&gt;$END$" description="Alert with alert link (warning)" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="GSP" value="true" />
       <option name="JSP" value="true" />

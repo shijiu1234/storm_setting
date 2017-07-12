@@ -1,9 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping pattern=".env.192.168.1.203_184" type="PLAIN_TEXT" />
-      <mapping pattern="test" type="PLAIN_TEXT" />
-      <mapping pattern=".env.192.168.1.203_183" type="PLAIN_TEXT" />
+      <mapping pattern="index" type="HTML" />
     </extensionMap>
   </component>
 </application>
