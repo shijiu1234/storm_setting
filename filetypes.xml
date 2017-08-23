@@ -6,6 +6,7 @@
       <mapping pattern="ShowTeacherDetail" type="JavaScript" />
       <mapping pattern="Teacher" type="JavaScript" />
       <mapping pattern="StudentTable.js" type="JavaScript" />
+      <mapping pattern="UserInfo.js" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
