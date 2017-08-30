@@ -1,7 +1,12 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="userManage" type="CSS" />
       <mapping pattern="index" type="HTML" />
+      <mapping pattern="ShowTeacherDetail" type="JavaScript" />
+      <mapping pattern="Teacher" type="JavaScript" />
+      <mapping pattern="StudentTable.js" type="JavaScript" />
+      <mapping pattern="UserInfo.js" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
