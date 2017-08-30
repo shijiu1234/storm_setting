@@ -1,5 +1,5 @@
 <templateSet group="yunclass">
-  <template name="modal" value="&lt;Modal&#10;                    width={600}&#10;                    title={this.state.title}&#10;                    visible={this.state.visible}&#10;                &gt;&#10;                    $temp$&#10;                &lt;/Modal&gt;" toReformat="true" toShortenFQNames="true">
+  <template name="modal" value="&lt;Modal&#10;                    width={600}&#10;                    title={this.state.title}&#10;                    visible={this.state.visible}&#10;                &gt;&#10;                    $temp$&#10;                &lt;/Modal&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="temp" expression="" defaultValue="clipboard()" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
