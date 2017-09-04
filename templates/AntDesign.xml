@@ -1,5 +1,25 @@
 <templateSet group="AntDesign">
-  <template name="Avatar" value="&lt;Avatar size=&quot;large&quot; icon=&quot;user&quot;&gt;&#10;    &#10;&lt;/Avatar&gt;" description="头像" toReformat="false" toShortenFQNames="true">
+  <template name="Avatar" value="&lt;Avatar shape=&quot;square&quot; size=&quot;&quot; icon=&quot;&quot; /&gt;&#10;    &#10;" description="头像" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Badge" value="&lt;Badge count={5}&gt;&#10;    &lt;a href=&quot;#&quot; className=&quot;head-example&quot; /&gt;&#10;&lt;/Badge&gt;" description="图标右上角的徽标数字" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Calendar" value="&lt;Calendar onPanelChange={onPanelChange} /&gt;" description="日历" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Card" value="&lt;Card title=&quot;Card title&quot; extra={&lt;a href=&quot;#&quot;&gt;More&lt;/a&gt;} style={{ width: 300 }}&gt;&#10;    &lt;p&gt;Card content&lt;/p&gt;&#10;    &lt;p&gt;Card content&lt;/p&gt;&#10;    &lt;p&gt;Card content&lt;/p&gt;&#10;  &lt;/Card&gt;" description="卡片" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Carousel" value="&lt;Carousel afterChange={onChange}&gt;&#10;    &lt;div&gt;&lt;h3&gt;1&lt;/h3&gt;&lt;/div&gt;&#10;    &lt;div&gt;&lt;h3&gt;2&lt;/h3&gt;&lt;/div&gt;&#10;    &lt;div&gt;&lt;h3&gt;3&lt;/h3&gt;&lt;/div&gt;&#10;    &lt;div&gt;&lt;h3&gt;4&lt;/h3&gt;&lt;/div&gt;&#10;  &lt;/Carousel&gt;" description="走马灯" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
