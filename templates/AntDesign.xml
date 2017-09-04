@@ -1,0 +1,7 @@
+<templateSet group="AntDesign">
+  <template name="Avatar" value="&lt;Avatar size=&quot;large&quot; icon=&quot;user&quot;&gt;&#10;    &#10;&lt;/Avatar&gt;" description="头像" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
