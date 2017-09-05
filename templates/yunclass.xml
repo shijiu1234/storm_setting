@@ -5,12 +5,37 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="Breadcrumb" value="&lt;Breadcrumb&gt;&#10;    &lt;Breadcrumb.Item&gt;Home&lt;/Breadcrumb.Item&gt;&#10;    &lt;Breadcrumb.Item&gt;&lt;a href=&quot;&quot;&gt;Application Center&lt;/a&gt;&lt;/Breadcrumb.Item&gt;&#10;    &lt;Breadcrumb.Item&gt;&lt;a href=&quot;&quot;&gt;Application List&lt;/a&gt;&lt;/Breadcrumb.Item&gt;&#10;    &lt;Breadcrumb.Item&gt;An Application&lt;/Breadcrumb.Item&gt;&#10;  &lt;/Breadcrumb&gt;" description="面包屑" toReformat="true" toShortenFQNames="true">
+  <template name="Breadcrumb" value="&lt;Breadcrumb&gt;&#10;    &lt;Breadcrumb.Item&gt; &lt;/Breadcrumb.Item&gt;&#10;    &lt;Breadcrumb.Item&gt; &lt;/Breadcrumb.Item&gt;&#10; &#10;  &lt;/Breadcrumb&gt;" description="面包屑" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
   <template name="Dropdown" value="const menu = (&#10;  &lt;Menu&gt;&#10;    &lt;Menu.Item&gt;&#10;    &#10;    &lt;/Menu.Item&gt;&#10;    &lt;Menu.Item&gt;&#10;    &#10;    &lt;/Menu.Item&gt;&#10;    &lt;Menu.Item&gt;&#10;     &#10;    &lt;/Menu.Item&gt;&#10;  &lt;/Menu&gt;&#10;);&#10;&#10;&lt;Dropdown overlay={menu}&gt;&#10;   &#10;  &lt;/Dropdown&gt;" description="下拉菜单" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Menu" value="  handleClick = (e) =&gt; {&#10;  }&#10; &lt;Menu&#10;        onClick={this.handleClick}&#10;        mode=&quot;horizontal&quot;&#10;      &gt;&#10;       &lt;Menu.Item key=&quot;&quot;&gt;&#10;        &#10;        &lt;/Menu.Item&gt;&#10;         &lt;SubMenu title=&quot;&quot;&gt;&#10;          &lt;MenuItemGroup title=&quot;&quot;&gt;&#10;            &lt;Menu.Item key=&quot;&quot;&gt; &lt;/Menu.Item&gt;&#10;            &lt;Menu.Item key=&quot;&quot;&gt; &lt;/Menu.Item&gt;&#10;          &lt;/MenuItemGroup&gt;&#10;          &lt;MenuItemGroup title=&quot;&quot;&gt;&#10;            &lt;Menu.Item key=&quot;&quot;&gt; &lt;/Menu.Item&gt;&#10;            &lt;Menu.Item key=&quot;&quot;&gt; &lt;/Menu.Item&gt;&#10;          &lt;/MenuItemGroup&gt;&#10;        &lt;/SubMenu&gt;&#10;        &lt;/Menu&gt;" description="导航菜单" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Pagination" value="&lt;Pagination defaultCurrent={1} &#10;            total={} &#10;            current={}&#10;            pageSize={20} &#10;            onChange={this.onChange}/&gt;" description="分页" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Steps" value="const Step = Steps.Step;&#10;&lt;Steps current={1} size=&quot;small&quot;  direction=&quot;vertical&quot; status=&quot;&quot; progressDot={}&gt;&#10;    &lt;Step title=&quot;&quot; description=&quot;&quot; status=&quot;&quot; icon={&lt;Icon/&gt;}/&gt;&#10;  &lt;/Steps&gt;" description="步骤条" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="AutoComplete" value="   &lt;AutoComplete&#10;        dataSource={dataSource}&#10;        style={{ width: 200 }}&#10;        onSelect={onSelect}&#10;        onSearch={this.handleSearch}&#10;        placeholder=&quot;input here&quot;&#10;      /&gt;" description="自动完成" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Cascader" value="const options = [{&#10;  value: 'zhejiang',&#10;  label: 'Zhejiang',&#10;  children: [{&#10;    value: 'hangzhou',&#10;    label: 'Hangzhou',&#10;    children: [{&#10;      value: 'xihu',&#10;      label: 'West Lake',&#10;    }],&#10;  }],&#10;},{&#10;  value: 'jiangsu',&#10;  label: 'Jiangsu',&#10;  children: [{&#10;    value: 'nanjing',&#10;    label: 'Nanjing',&#10;    children: [{&#10;      value: 'zhonghuamen',&#10;      label: 'Zhong Hua Men',&#10;    }],&#10;  }],&#10;}];&#10;function onChange(value) {&#10;  console.log(value);&#10;}&#10;&lt;Cascader options={options} onChange={onChange} placeholder=&quot;Please select&quot; /&gt;" description="级联选择" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
