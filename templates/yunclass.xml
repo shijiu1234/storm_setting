@@ -5,4 +5,14 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="Breadcrumb" value="&lt;Breadcrumb&gt;&#10;    &lt;Breadcrumb.Item&gt;Home&lt;/Breadcrumb.Item&gt;&#10;    &lt;Breadcrumb.Item&gt;&lt;a href=&quot;&quot;&gt;Application Center&lt;/a&gt;&lt;/Breadcrumb.Item&gt;&#10;    &lt;Breadcrumb.Item&gt;&lt;a href=&quot;&quot;&gt;Application List&lt;/a&gt;&lt;/Breadcrumb.Item&gt;&#10;    &lt;Breadcrumb.Item&gt;An Application&lt;/Breadcrumb.Item&gt;&#10;  &lt;/Breadcrumb&gt;" description="面包屑" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Dropdown" value="const menu = (&#10;  &lt;Menu&gt;&#10;    &lt;Menu.Item&gt;&#10;    &#10;    &lt;/Menu.Item&gt;&#10;    &lt;Menu.Item&gt;&#10;    &#10;    &lt;/Menu.Item&gt;&#10;    &lt;Menu.Item&gt;&#10;     &#10;    &lt;/Menu.Item&gt;&#10;  &lt;/Menu&gt;&#10;);&#10;&#10;&lt;Dropdown overlay={menu}&gt;&#10;   &#10;  &lt;/Dropdown&gt;" description="下拉菜单" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
