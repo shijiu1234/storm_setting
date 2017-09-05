@@ -1,5 +1,5 @@
 <templateSet group="AntDesign">
-  <template name="Avatar" value="&lt;Avatar shape=&quot;square&quot; size=&quot;&quot; icon=&quot;&quot; /&gt;&#10;    &#10;" description="头像" toReformat="false" toShortenFQNames="true">
+  <template name="Avatar" value="&lt;Avatar size=&quot;large&quot; icon=&quot;user&quot; /&gt;&#10;&lt;Avatar icon=&quot;user&quot; /&gt;&#10;&lt;Avatar size=&quot;small&quot; icon=&quot;user&quot; /&gt;&#10;&#10;&lt;Avatar shape=&quot;square&quot; size=&quot;large&quot; icon=&quot;user&quot; /&gt;&#10;&lt;Avatar shape=&quot;square&quot; icon=&quot;user&quot; /&gt;&#10;&lt;Avatar shape=&quot;square&quot; size=&quot;small&quot; icon=&quot;user&quot; /&gt;&#10;    &#10;" description="头像" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -9,7 +9,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="Calendar" value="&lt;Calendar onPanelChange={onPanelChange} /&gt;" description="日历" toReformat="false" toShortenFQNames="true">
+  <template name="Calendar" value="function onPanelChange(value, mode) {&#10;  &#10;}&#10;&#10;&lt;Calendar onPanelChange={onPanelChange} /&gt;" description="日历" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -19,7 +19,92 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="Carousel" value="&lt;Carousel afterChange={onChange}&gt;&#10;    &lt;div&gt;&lt;h3&gt;1&lt;/h3&gt;&lt;/div&gt;&#10;    &lt;div&gt;&lt;h3&gt;2&lt;/h3&gt;&lt;/div&gt;&#10;    &lt;div&gt;&lt;h3&gt;3&lt;/h3&gt;&lt;/div&gt;&#10;    &lt;div&gt;&lt;h3&gt;4&lt;/h3&gt;&lt;/div&gt;&#10;  &lt;/Carousel&gt;" description="走马灯" toReformat="false" toShortenFQNames="true">
+  <template name="Carousel" value="function onChange() {&#10;  &#10;}&#10;&lt;Carousel afterChange={onChange}&gt;&#10;    &lt;div&gt;&lt;h3&gt;1&lt;/h3&gt;&lt;/div&gt;&#10;    &lt;div&gt;&lt;h3&gt;2&lt;/h3&gt;&lt;/div&gt;&#10;    &lt;div&gt;&lt;h3&gt;3&lt;/h3&gt;&lt;/div&gt;&#10;    &lt;div&gt;&lt;h3&gt;4&lt;/h3&gt;&lt;/div&gt;&#10;&lt;/Carousel&gt;&#10;&#10;/* For demo */&#10;.ant-carousel .slick-slide {&#10;  text-align: ;&#10;  height: ;&#10;  line-height: ;&#10;  background: ;&#10;  overflow: ;&#10;}&#10;&#10;.ant-carousel .slick-slide h3 {&#10;  color: ;&#10;}" description="走马灯" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Collapse" value="function callback(key){&#10;&#10;}&#10;const text = '';&#10;&#10;&lt;Collapse defaultActiveKey={['']} onChange={callback}&gt;&#10;    &lt;Panel header=&quot;&quot; key=&quot;&quot;&gt;&#10;      &lt;p&gt;{text}&lt;/p&gt;&#10;    &lt;/Panel&gt;&#10;&lt;/Collapse&gt;" description="折叠面板" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Popover" value="const content = (&#10;  &lt;div&gt;&#10;    &lt;p&gt;Content&lt;/p&gt;&#10;  &lt;/div&gt;  &#10;)&#10;&#10;&lt;Popover content={content} title=&quot;&quot;&gt;&#10;    &lt;Button type=&quot;primary&quot;&gt;Hover me&lt;/Button&gt;&#10;&lt;/Popover&gt;" description="气泡卡片" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Tooltip" value="&lt;Tooltip title=&quot;&quot;&gt;&#10;    &lt;span&gt;&lt;/span&gt;&#10;  &lt;/Tooltip&gt;" description="文字提示气泡框" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Table" value="const dataSource = [{&#10;  key: '',&#10;  name: '',&#10;  age: ,&#10;  address: ''&#10;}]; &#10;const columns = [{&#10;  title: '',&#10;  dataIndex: '',&#10;  key: '',&#10;}];&#10;&lt;Table dataSource={dataSource} columns={columns} /&gt;" description="表格" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Tabs" value="function callback(key){&#10;    &#10;}&#10;&lt;Tabs defaultActiveKey=&quot;&quot; onChange={callback}&gt;&#10;    &lt;TabPane tab=&quot;&quot; key=&quot;&quot;&gt; &lt;/TabPane&gt;&#10;&lt;/Tabs&gt;" description="标签页" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Tag" value="function log(e) {&#10;  &#10;}&#10;function preventDefault(e) {&#10;  e.preventDefault();&#10;}&#10;&lt;Tag&gt;&lt;/Tag&gt;&#10;&lt;Tag&gt;&lt;a href=&quot;https:&quot;&gt;Link&lt;/a&gt;&lt;/Tag&gt;&#10;&lt;Tag closable onClose={log}&gt;&lt;/Tag&gt;&#10;&lt;Tag closable onClose={preventDefault}&gt;Prevent Default&lt;/Tag&gt;&#10;" description="标签" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Timeline" value="&lt;Timeline&gt;&#10;    &lt;Timeline.Item&gt;&lt;/Timeline.Item&gt;&#10;    &lt;Timeline.Item&gt;&lt;/Timeline.Item&gt;&#10;    &lt;Timeline.Item&gt;&lt;/Timeline.Item&gt;&#10;    &lt;Timeline.Item&gt;&lt;/Timeline.Item&gt;&#10;&lt;/Timeline&gt;" description="时间轴" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Tree" value="&lt;Tree&#10;    checkable&#10;    defaultExpandedKeys={['', '']}&#10;    defaultSelectedKeys={['', '']}&#10;    defaultCheckedKeys={['', '']}&#10;    onSelect={this.onSelect}&#10;    onCheck={this.onCheck}&#10;&gt;&#10;    &lt;TreeNode title=&quot;&quot; key=&quot;&quot;&gt;&#10;        &lt;TreeNode title=&quot;&quot; key=&quot;&quot;&gt;    &#10;    &lt;/TreeNode&gt;&#10;&lt;/Tree&gt;" description="树形控件" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Alert" value="&lt;Alert message=&quot;&quot; type=&quot;&quot; /&gt;" description="警告提示" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Modal" value="showModal = () =&gt; {&#10;    this.setState({&#10;      visible: true,&#10;    });&#10;  }&#10;handleOk = () =&gt; {&#10;    this.setState({&#10;      visible: false,&#10;    });&#10;  }&#10;handleCancel = () =&gt; {&#10;    this.setState({&#10;      visible: false,&#10;    });&#10;  }&#10;  &#10;&lt;Button type=&quot;primary&quot; onClick={this.showModal}&gt;Open&lt;/Button&gt;&#10;&lt;Modal&#10;    title=&quot;Basic Modal&quot;&#10;    visible={this.state.visible}&#10;    onOk={this.handleOk}&#10;    onCancel={this.handleCancel}&#10;&gt;&#10;&lt;p&gt;&lt;/p&gt;&#10;&lt;/Modal&gt;" description="对话框" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Message" value="const info = () =&gt; {&#10;    message.info('text');&#10;};&#10;&#10;&lt;Button type=&quot;primary&quot; onClick={info}&gt;text&lt;/Button&gt;" description="全局提示" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Notification" value="const openNotification = () =&gt; {&#10;    notification.open({&#10;        message:'',&#10;        description:'',&#10;    });&#10;}&#10;&#10;&lt;Button type=&quot;primary&quot; onClick={openNotification}&gt;&lt;/Button&gt;" description="通知提醒框" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Progress" value="&lt;Progress percent={} /&gt;&#10;&lt;Progress percent={} status=&quot;&quot; /&gt;&#10;&lt;Progress percent={} showInfo={false} /&gt;" description="进度条" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Popconfirm" value="function confirm() {&#10;    message.success('Click on Yes');&#10;}&#10;function cancel() {&#10;    message.error('Click on No');&#10;}&#10;&#10;&lt;Popconfirm title=&quot;&quot; onConfirm={confirm} onCancel={cancel} okText=&quot;Yes&quot; cancelText=&quot;No&quot;&gt;&#10;    &lt;a href=&quot;#&quot;&gt;delete&lt;/a&gt;&#10;&lt;/Popconfirm&gt;" description="气泡确认框" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Spin" value="&lt;Spin /&gt;" description="加载中" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Anchor" value="const { Link } = Anchor&#10;&#10;&lt;Anchor&gt;&#10;    &lt;Link href=&quot;&quot; title=&quot;&quot; /&gt;&#10;&lt;/Anchor&gt;" description="锚点" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="BackTop" value="&lt;BackTop /&gt;&#10;    text&#10;&lt;strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}&gt; gray &lt;/strong&gt;&#10;    button." description="回到顶部" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
