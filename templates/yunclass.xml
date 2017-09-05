@@ -40,4 +40,9 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="Checkbox" value="function onChange(e) {&#10;  console.log(`checked = ${e.target.checked}`);&#10;}&#10;&#10; &lt;Checkbox onChange={onChange}&gt;Checkbox&lt;/Checkbox&gt;" description="多选框" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
