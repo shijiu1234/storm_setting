@@ -1,13 +1,13 @@
 <scheme name="_@user_Darcula" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2017-08-30T11:34:20</property>
+    <property name="created">2017-08-29T11:03:59</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2017.1.1.0.0</property>
-    <property name="modified">2017-08-30T13:40:22</property>
+    <property name="modified">2017-08-29T11:19:22</property>
     <property name="originalScheme">Darcula</property>
   </metaInfo>
-  <option name="EDITOR_FONT_SIZE" value="20" />
+  <option name="EDITOR_FONT_SIZE" value="22" />
   <option name="CONSOLE_FONT_NAME" value="Monospaced" />
   <option name="CONSOLE_FONT_SIZE" value="12" />
   <option name="EDITOR_FONT_NAME" value="Monospaced" />
