@@ -1,4 +1,9 @@
 <templateSet group="campus">
+  <template name="modal" value="$modal.open({&#10;    templateUrl: 'app/$END$.html',&#10;    backdrop: 'static',&#10;    size: 'lg',&#10;})&#10;        " description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
   <template name="uidata" value="&lt;uidata options=&quot;$name$&quot; ng-model=&quot;$name$&quot;/&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -220,14 +225,6 @@
   <template name="uibtabset" value="&lt;uib-tabset&gt;&#10;    &lt;uib-tab index=&quot;1&quot; heading=&quot;&quot; select=&quot;&quot;&gt;&lt;/uib-tab&gt;&#10;    &lt;uib-tab heading=&quot;&quot; select=&quot;&quot;&gt;&lt;/uib-tab&gt;&#10;&lt;/uib-tabset&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="$uibModal" value="$uibModal.open({&#10;    scope: $scope,&#10;    backdrop: &quot;static&quot;,&#10;    size: &quot;$size$&quot;,&#10;    templateUrl: &quot;app/$url$.html&quot;,&#10;    controller: function($scope,$uibModalInstance){&#10;        $var$&#10;    }&#10;})" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="size" expression="" defaultValue="&quot;lg&quot;" alwaysStopAt="true" />
-    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
 </templateSet>

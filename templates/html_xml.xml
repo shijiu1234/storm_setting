@@ -1,6 +1,5 @@
 <templateSet group="html/xml">
-  <template name="popover" value="&lt;button uib-popover-template=&quot;'$data$.html'&quot; popover-placement=&quot;bottom&quot; popover-trigger=&quot;focus&quot;&gt;&#10;    {{select.name}}&#10;    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&#10;&lt;/button&gt;&#10;&lt;script type=&quot;text/ng-template&quot; id=&quot;$data$.html&quot;&gt;&#10;    &lt;div ng-repeat=&quot;item in $data$&quot; ng-click=&quot;$parent.$parent.select=item&quot; title=&quot;{{item.name}}&quot;&gt;&#10;        {{item.name}}&#10;    &lt;/div&gt;&#10;&lt;/script&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="caret" value="&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>

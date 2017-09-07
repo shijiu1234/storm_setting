@@ -1,4 +1,9 @@
 <application>
+  <component name="PhpInterpreters">
+    <interpreters>
+      <interpreter home="C:\Program Files (x86)\Zend\ZendServer\bin\php.exe" id="59ac619e-a309-4dbe-b5b0-c1216fe386c7" name="PHP 7" debugger_id="php.debugger.XDebug" />
+    </interpreters>
+  </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="PHP 7">
