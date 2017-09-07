@@ -1,4 +1,4 @@
-<templateSet group="AntDesign">
+<templateSet group="AntD">
   <template name="Avatar" value="&lt;Avatar size=&quot;large&quot; icon=&quot;user&quot; /&gt;&#10;&lt;Avatar icon=&quot;user&quot; /&gt;&#10;&lt;Avatar size=&quot;small&quot; icon=&quot;user&quot; /&gt;&#10;&#10;&lt;Avatar shape=&quot;square&quot; size=&quot;large&quot; icon=&quot;user&quot; /&gt;&#10;&lt;Avatar shape=&quot;square&quot; icon=&quot;user&quot; /&gt;&#10;&lt;Avatar shape=&quot;square&quot; size=&quot;small&quot; icon=&quot;user&quot; /&gt;&#10;    &#10;" description="头像" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
